@@ -1,0 +1,7 @@
+"0","analysis_vars <- c("
+"0","    ""ListingKey"", ""EmploymentStatus"", ""EstimatedLoss"",  "
+"0","    ""BorrowerAPR"", ""LoanStatus"", ""MonthlyLoanPayment"","
+"0","    ""LoanOriginalAmount"", ""LoanCurrentDaysDelinquent"", ""IncomeRange"","
+"0","    ""DebtToIncomeRatio"", ""AmountDelinquent"", ""EstimatedReturn"""
+"0",")"
+"0","analysis_df <- select(loan_df, analysis_vars)"

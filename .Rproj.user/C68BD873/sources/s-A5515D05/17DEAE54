@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1543894846063.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "17DEAE54",
+    "lastKnownWriteTime" : 1544600077,
+    "last_content_update" : 1544600077826,
+    "path" : "~/Data_Science_Projects/udacity_project_6/reports/exploring_data.Rmd",
+    "project_path" : "reports/exploring_data.Rmd",
+    "properties" : {
+        "cursorPosition" : "444,218",
+        "last_setup_crc32" : "A5515D05c7e2e05c",
+        "scrollLine" : "443"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

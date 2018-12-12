@@ -1,0 +1,6 @@
+"0","analysis_vars <- c("
+"0","    ""EmploymentStatus"", ""EstimatedLoss"", ""EstimatedReturn"", "
+"0","    ""BorrowerAPR"", ""LoanStatus"", ""MonthlyLoanPayment"","
+"0","    ""LoanOriginalAmount"", ""LoanCurrentDaysDeliquent"", ""IncomeRange"","
+"0","    ""DebtToIncomeRatio"", ""AmountDelinquent"", ""ListingKey"""
+"0",")"

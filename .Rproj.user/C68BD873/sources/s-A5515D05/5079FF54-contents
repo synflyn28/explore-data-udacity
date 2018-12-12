@@ -1,0 +1,51 @@
+---
+title: "Exploring Data Using R"
+author: "Justin Reid"
+date: "12/1/2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Introduction
+
+This dataset contains loan information for approx. 114,000 loans. This analysis is designed to
+answer meaningful questions about the loan data in question and perform visualizations and 
+aggregations in order to answer those questions. The analysis is as follow:
+
+### Load in required libraries
+```{r}
+library(tidyverse)
+```
+
+### Load in Data
+```{r}
+loan_df <- read.csv('data/prosperLoanData.csv')
+```
+
+### Display Subset of dataframe
+```{r}
+head(loan_df[,2:5], n = 4)
+```
+
+### Select Variables that will be Examined in the Analysis and Subset DataFrame
+```{r}
+analysis_vars <- c(
+    "ListingKey", "EmploymentStatus", "EstimatedLoss",  
+    "BorrowerAPR", "LoanStatus", "MonthlyLoanPayment",
+    "LoanOriginalAmount", "LoanCurrentDaysDelinquent", "IncomeRange",
+    "DebtToIncomeRatio", "AmountDelinquent", "EstimatedReturn"
+)
+analysis_df <- select(loan_df, analysis_vars)
+```
+
+### Get Summary for All the Variables 
+
+```{r}
+
+```
+
+
+### Reflection

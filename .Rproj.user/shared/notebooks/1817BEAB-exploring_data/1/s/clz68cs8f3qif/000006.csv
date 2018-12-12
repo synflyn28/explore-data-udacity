@@ -1,0 +1,3 @@
+"0","ggplot(analysis_df %>% filter(!is.na(DebtToIncomeRatio)), aes(DebtToIncomeRatio)) +"
+"0","    geom_histogram() +"
+"0","    facet_wrap(~ LoanStatus, scales = 'free')"

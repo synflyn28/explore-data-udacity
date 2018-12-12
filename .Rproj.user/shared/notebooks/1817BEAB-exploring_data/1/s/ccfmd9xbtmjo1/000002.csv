@@ -1,0 +1,3 @@
+"0","ggplot(analysis_df, aes(x = EmploymentStatus, y = MonthlyLoanPayment)) +"
+"0","    geom_boxplot() +"
+"0","    theme(axis.text.x = element_text(angle = 90, hjust = 1))"

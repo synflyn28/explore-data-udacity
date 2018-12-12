@@ -1,0 +1,3 @@
+"0","ggplot(analysis_df %>% filter(!is.na(DebtToIncomeRatio)), aes(x = IncomeRange, y = DebtToIncomeRatio)) +"
+"0","    geom_boxplot() +"
+"0","    theme(axis.text.x = element_text(angle = 90, hjust = 1))"

@@ -1,0 +1,4 @@
+"0","analysis_df %>%"
+"0","    select(BorrowerAPR, AmountDelinquent) %>%"
+"0","    filter(!is.na(BorrowerAPR) & !is.na(AmountDelinquent)) %>%"
+"0","    summarize(corr_coeff = cor(BorrowerAPR, AmountDelinquent))"

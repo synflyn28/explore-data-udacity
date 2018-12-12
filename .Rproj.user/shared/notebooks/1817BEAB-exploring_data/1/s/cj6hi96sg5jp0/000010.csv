@@ -1,0 +1,2 @@
+"0","ggplot(analysis_df, aes(x = LoanOriginalAmount, y = EstimatedReturn)) +"
+"0","    geom_point()"

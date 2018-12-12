@@ -1,0 +1,4 @@
+"0","analysis_df %>%"
+"0","    select(EstimatedReturn, LoanOriginalAmount) %>%"
+"0","    filter(!is.na(LoanOriginalAmount) & !is.na(EstimatedReturn)) %>%"
+"0","    summarize(corr_coeff = cor(LoanOriginalAmount, EstimatedReturn))"

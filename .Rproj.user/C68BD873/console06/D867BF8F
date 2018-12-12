@@ -1,0 +1,11 @@
+]0;~/Data_Science_Projects/udacity_project_6[?1034hJustins-MacBook-Pro:udacity_project_6 justinreid$ ls -lh
+total 8
+drwxr-xr-x  4 justinreid  staff   128B Dec  2 22:45 data
+drwxr-xr-x  3 justinreid  staff    96B Dec  3 22:40 reports
+-rw-r--r--  1 justinreid  staff   205B Dec  1 16:42 udacity_project_6.Rproj
+]0;~/Data_Science_Projects/udacity_project_6Justins-MacBook-Pro:udacity_project_6 justinreid$ [KJustins-MacBook-Pro:udacity_project_6 justinreid$ [KJustins-MacBook-Pro:udacity_project_6 justinreid$ [KJustins-MacBook-Pro:udacity_project_6 justinreid$ pwd
+/Users/justinreid/Data_Science_Projects/udacity_project_6
+]0;~/Data_Science_Projects/udacity_project_6Justins-MacBook-Pro:udacity_project_6 justinreid$ git a[Kinit .[K
+Initialized empty Git repository in /Users/justinreid/Data_Science_Projects/udacity_project_6/.git/
+]0;~/Data_Science_Projects/udacity_project_6Justins-MacBook-Pro:udacity_project_6 justinreid$ git add remote o[K[K[K[K[K[K[K[K[K[K[K[Kremote add origin https://github.com/synflyn28 /explore-data-udacity.git
+]0;~/Data_Science_Projects/udacity_project_6Justins-MacBook-Pro:udacity_project_6 justinreid$ git add .
