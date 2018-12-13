@@ -1,0 +1,5 @@
+"0","bar_df <- analysis_df %>% select(EmploymentStatus, LoanStatus, IncomeRange)"
+"0","ggplot(gather(bar_df), aes(value)) +"
+"0","    geom_bar() +"
+"0","    facet_wrap(~ key, scales = 'free') +"
+"0","    theme(axis.text.x = element_text(angle = 90, hjust = 1))"

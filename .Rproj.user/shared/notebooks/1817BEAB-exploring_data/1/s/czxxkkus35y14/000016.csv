@@ -1,0 +1,5 @@
+"0","ggplot(analysis_df, "
+"0","       aes(x = BorrowerAPR, y = LoanOriginalAmount, color = EmploymentStatus)) +"
+"0","    geom_point(alpha = 0.1, size = 1) +"
+"0","    geom_smooth(method = ""lm"", se = FALSE, size=2) +"
+"0","      scale_color_brewer(type='seq', guide=guide_legend(title='EmploymentStatus'))"

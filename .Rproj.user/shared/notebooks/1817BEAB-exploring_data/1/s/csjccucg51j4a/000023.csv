@@ -1,4 +1,0 @@
-"0","hist_df <- Filter(is.numeric, analysis_df)"
-"0","ggplot(gather(hist_df), aes(value)) +"
-"0","    geom_histogram() +"
-"0","    facet_wrap(~ key, scales = 'free_x')"

@@ -5,16 +5,16 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "0",
+    "hash" : "2164619961",
     "id" : "17DEAE54",
-    "lastKnownWriteTime" : 1544600077,
-    "last_content_update" : 1544600077826,
+    "lastKnownWriteTime" : 1544680924,
+    "last_content_update" : 1544680924065,
     "path" : "~/Data_Science_Projects/udacity_project_6/reports/exploring_data.Rmd",
     "project_path" : "reports/exploring_data.Rmd",
     "properties" : {
-        "cursorPosition" : "444,218",
-        "last_setup_crc32" : "A5515D05c7e2e05c",
-        "scrollLine" : "443"
+        "cursorPosition" : "487,569",
+        "last_setup_crc32" : "A5515D0581b53aab",
+        "scrollLine" : "481"
     },
     "relative_order" : 1,
     "source_on_save" : false,

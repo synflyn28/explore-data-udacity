@@ -6,7 +6,7 @@ output: html_document
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE, echo = FALSE)
 ```
 
 ## Introduction
@@ -61,9 +61,21 @@ ggplot(gather(hist_df), aes(value)) +
 Most distributions are right-skewed with the exceptions of Estimated Return and Borrower APR. There are also are large amount of 0 values present in Amount Delinuqent and Loan Current Days Delinquent. 
 
 
+### Show barplots of all categorical variables
+
+```{r}
+bar_df <- analysis_df %>% select(EmploymentStatus, LoanStatus, IncomeRange)
+ggplot(gather(bar_df), aes(value)) +
+    geom_bar() +
+    facet_wrap(~ key, scales = 'free') +
+    theme(axis.text.x = element_text(angle = 90, hjust = 1))
+```
+
+
 ### Find which Variables are the Most Correlated by Using a Scatter Matrix
 ```{r}
-ggpairs(hist_df)
+ggpairs(hist_df) +
+    theme(axis.text = element_blank())
 ```
 
 Most variables don't have a strong positive or negative correlation however Borrower APR & Estimated Loss, and Loan Original Amount and Monthly loan payment have a nearly 1 to 1 correlation while Estimated Return and Borrower APR has a strong positive correlation and Estimated Return Estimated loss has a moderate correlation.
@@ -73,7 +85,8 @@ Most variables don't have a strong positive or negative correlation however Borr
 ### Which Employment Category Has the Highest Monthly Payment?
 
 ```{r}
-ggplot(analysis_df %>% filter(!is.na(MonthlyLoanPayment)), aes(x = EmploymentStatus, y = MonthlyLoanPayment)) +
+ggplot(analysis_df %>% filter(!is.na(MonthlyLoanPayment)), 
+       aes(x = EmploymentStatus, y = MonthlyLoanPayment)) +
     geom_boxplot() +
     theme(axis.text.x = element_text(angle = 90, hjust = 1))
 ```    
@@ -93,8 +106,10 @@ The employment category that has the highest average and maximum monthly payment
 
 ### Which Income Range has the highest Delinquent Amount?
 ```{r}
-ggplot(analysis_df %>% filter(!is.na(IncomeRange)) , aes(x = IncomeRange, y = AmountDelinquent)) +
+ggplot(analysis_df %>% filter(!is.na(IncomeRange)) , 
+       aes(x = IncomeRange, y = AmountDelinquent)) +
     geom_boxplot() +
+    scale_y_log10() +
     theme(axis.text.x = element_text(angle = 90, hjust = 1))
 ```   
 
@@ -108,13 +123,16 @@ analysis_df %>%
         avg = mean(AmountDelinquent)
     )
 ```
+
 The largest delinquent amount in terms of both average and max is 100K+ which is surprising
 though creating a percentage of delinquency amount using income range may tell a different story.
 
 
 ### What loan status has the highest debt to income ratio?
 ```{r}
-ggplot(analysis_df %>% filter(!is.na(DebtToIncomeRatio)), aes(DebtToIncomeRatio)) +
+ggplot(
+    analysis_df %>% 
+        filter(!is.na(DebtToIncomeRatio)), aes(DebtToIncomeRatio)) +
     geom_histogram() +
     facet_wrap(~ LoanStatus, scales = 'free')
 ```
@@ -129,12 +147,15 @@ analysis_df %>%
         avg = mean(DebtToIncomeRatio)
     )
 ```
+
 The loan status with the highest average debt to income ratio is Past Due at 0.376. Several categories are tied with the same max value (10.01) which is consistent with the description of the max capped value for the Debt to Income Ratio variable. These loan status are Charged Off, Completed, Current, Defaulted, and the previously mentioned past due.
 
 
 ### Which Employment status has the highest estimated return?
 ```{r}
-ggplot(analysis_df %>% filter(!is.na(EstimatedReturn)), aes(x = EmploymentStatus, y = EstimatedReturn)) +
+ggplot(analysis_df %>% 
+           filter(!is.na(EstimatedReturn)), 
+       aes(x = EmploymentStatus, y = EstimatedReturn)) +
     geom_boxplot() +
     theme(axis.text.x = element_text(angle = 90, hjust = 1))
 ```
@@ -149,33 +170,27 @@ analysis_df %>%
         avg = mean(EstimatedReturn)
     )
 ```
+
 The employment status with the highest max estimated returned value is Self-Employed with 0.28. However the highest average value is not-employed. This is also true for median. This situation is due to outliers in the self-employed category, which are more extreme on the positive side than not-employed, even though not-employed's category's median and average are larger.
 
 
-### Which loan status has the highest Estimated Loss?
-
+### For which employment status does Borrower APR and Loan Original Amount Have the Strongest
+### Correlation?
 ```{r}
-ggplot(analysis_df %>% filter(!is.na(EstimatedLoss)), aes(x = LoanStatus, y = EstimatedLoss)) +
-    geom_boxplot() +
-    theme(axis.text.x = element_text(angle = 90, hjust = 1))
+ggplot(analysis_df, 
+       aes(x = BorrowerAPR, y = LoanOriginalAmount, color = EmploymentStatus)) +
+    geom_point(alpha = 0.1, size = 1) +
+    geom_smooth(method = "lm", se = FALSE, size=2) +
+      scale_color_brewer(type='seq', guide=guide_legend(title='EmploymentStatus'))
 ```
 
-```{r}
-analysis_df %>%
-    select(LoanStatus, EstimatedLoss) %>%
-    filter(!is.na(EstimatedLoss)) %>%
-    group_by(LoanStatus) %>%
-    summarize(
-        max = max(EstimatedLoss), med = median(EstimatedLoss),
-        avg = mean(EstimatedLoss)
-    )
-```
-The loan statuses that have the maximum estimated loass are Charged Off and Completed at 0.366. But Charged Off has a higher median and average. This again due to the effect of outliers.  
-
+The category with the strongest negative correlation is self-employed which appears as the most linear line in this scatterplot.
 
 ### Which Income Range has the highest estimated return
 ```{r}
-ggplot(analysis_df %>% filter(!is.na(EstimatedReturn)), aes(x = IncomeRange, y = EstimatedReturn)) +
+ggplot(analysis_df %>% 
+           filter(!is.na(EstimatedReturn)), 
+       aes(x = IncomeRange, y = EstimatedReturn)) +
     geom_boxplot() +
     theme(axis.text.x = element_text(angle = 90, hjust = 1))
 ```
@@ -190,6 +205,7 @@ analysis_df %>%
         avg = mean(EstimatedReturn)
     )
 ```
+
 The income range with the maximum estimated return is the 50K to 74.9K range. However the income range with highest median value is 0 dollars and the highest average value is Not employed. This could be due to non-employed people marking their income as 0 dollars, but more information is needed to come to that conclusion.
 
 
@@ -197,7 +213,7 @@ The income range with the maximum estimated return is the 50K to 74.9K range. Ho
 
 ```{r}
 ggplot(analysis_df, aes(x = MonthlyLoanPayment, y = EstimatedReturn)) +
-    geom_point()
+    geom_point(alpha=0.08)
 ```
 
 ```{r}
@@ -206,13 +222,14 @@ analysis_df %>%
     filter(!is.na(MonthlyLoanPayment) & !is.na(EstimatedReturn)) %>%
     summarize(corr_coeff = cor(MonthlyLoanPayment, EstimatedReturn))
 ```
+
 The monthly loan payment and estimated return are negatively correlated though instead of going to zero the values seem to descend to 0.05, but there are stronger negative and postive values towards the left of the plot.
 
 
 ### Are Borrower APR and Amount Delinquent Correlated?
 ```{r}
 ggplot(analysis_df, aes(x = LoanOriginalAmount, y = EstimatedReturn)) +
-    geom_point()
+    geom_point(alpha=0.08)
 ```
 
 ```{r}
@@ -227,7 +244,7 @@ Even though Estimated Return and the loan original amount are negatively correla
 ### Is the monthly loan payment and Debt to income ratio correlated?
 ```{r}
 ggplot(analysis_df, aes(x = BorrowerAPR, y = AmountDelinquent)) +
-    geom_point()
+    geom_point(alpha=0.1)
 ```
 
 ```{r}
@@ -242,8 +259,11 @@ Even though there is a slight positive correlation between Borrower APR and Amou
 
 ### Which employment status has the longest time in deliquency?
 ```{r}
-ggplot(analysis_df %>% filter(!is.na(LoanCurrentDaysDelinquent)), aes(x = EmploymentStatus, y = LoanCurrentDaysDelinquent)) +
+ggplot(analysis_df %>% 
+           filter(!is.na(LoanCurrentDaysDelinquent)), 
+       aes(x = EmploymentStatus, y = LoanCurrentDaysDelinquent)) +
     geom_boxplot() +
+    scale_y_log10() +
     theme(axis.text.x = element_text(angle = 90, hjust = 1))
 ```
 
@@ -257,6 +277,7 @@ analysis_df %>%
         avg = mean(LoanCurrentDaysDelinquent)
     )
 ```
+
 The category with the highest maximum in delinquency is uncategorized and the highest average value is not available. This could be that the uncategorized employment status could be not available but more information is needed to make that conclusion.
 
 
@@ -296,12 +317,15 @@ analysis_df %>%
         avg = mean(MonthlyLoanPayment)
     )
 ```
+
 The income range with the highest monthly payment is the 100K+ range which makes sense given that people with larger incomes can afford larger loans.
 
 
 ### Which loan status has the highest rate of return?
 ```{r}
-ggplot(analysis_df %>% filter(!is.na(EstimatedReturn)), aes(x = LoanStatus, y = EstimatedReturn)) +
+ggplot(analysis_df %>% 
+           filter(!is.na(EstimatedReturn)), 
+       aes(x = LoanStatus, y = EstimatedReturn)) +
     geom_boxplot() +
     theme(axis.text.x = element_text(angle = 90, hjust = 1))
 ```
@@ -343,7 +367,9 @@ The loan status with the highest maximum APR is completed, however the category 
 ```{r}
 ggplot(analysis_df %>% filter(!is.na(DebtToIncomeRatio)), aes(x = IncomeRange, y = DebtToIncomeRatio)) +
     geom_boxplot() +
+    scale_y_log10() +
     theme(axis.text.x = element_text(angle = 90, hjust = 1))
+    
 ```
 
 ```{r}
@@ -356,11 +382,14 @@ analysis_df %>%
         avg = mean(DebtToIncomeRatio)
     )
 ```
+
 All but two of the income range categories reach the maximum debt to income ratio value, which is due to the ceiling placed on the maximum value. So the median and average values are more meaningful. The category with the highest median values is 1-24,99, and the category with the highest average debt to income ratio is Not employed. Which makes sense given the lower income brackets.
 
 ### Which employment status had the highest rate of return?
 ```{r}
-ggplot(analysis_df %>% filter(!is.na(EstimatedReturn)), aes(x = EmploymentStatus, y = EstimatedReturn)) +
+ggplot(analysis_df %>% 
+           filter(!is.na(EstimatedReturn)), 
+       aes(x = EmploymentStatus, y = EstimatedReturn)) +
     geom_boxplot() +
     theme(axis.text.x = element_text(angle = 90, hjust = 1))
 ```
@@ -393,12 +422,15 @@ analysis_df %>%
         avg = mean(MonthlyLoanPayment)
     )
 ```
+
 The employment status with the highest maximum, median, and average monthly payment is Employed. Which makes sense given that category represents clients that is more likely to make regular monthly payments.
 
 
 ### Which loan status had the highest loss?
 ```{r}
-ggplot(analysis_df %>% filter(!is.na(EstimatedLoss)), aes(x = LoanStatus, y = EstimatedLoss)) +
+ggplot(analysis_df %>% 
+           filter(!is.na(EstimatedLoss)), 
+       aes(x = LoanStatus, y = EstimatedLoss)) +
     geom_boxplot() +
     theme(axis.text.x = element_text(angle = 90, hjust = 1))
 ```
@@ -423,7 +455,9 @@ There are three loan statuses with the maximum estimated loss, which are charged
 The following are highlights from the visualizations used in this assignment and what was learned during their creation.
 
 ```{r}
-ggpairs(hist_df)
+ggpairs(hist_df) +
+    theme(axis.text = element_blank()) +
+    ggtitle("Pairplot of All Continuous Variables in Dataset")
 ```
 
 In this scatter matrix not only are there several variables that are strongly correlated with each other, but that there were also interesting scatterplot patterns that were worth examining further. 
@@ -431,7 +465,9 @@ In this scatter matrix not only are there several variables that are strongly co
 
 ```{r}
 ggplot(analysis_df, aes(x = MonthlyLoanPayment, y = EstimatedReturn)) +
-    geom_point()
+    geom_point(alpha=0.08) +
+    ggtitle("Scatter Plot of Estimated Return vs. Monthly Loan Payment") +
+    labs(x ="Estimated Return", y = "Monthly Loan Payment USD")
 ```
 In this scatterplot of Estimated Return vs. Monthly Loan Payment instead of descending to the lowest value, the data points seem to gather around 0.05 horizontally and are more noisy towards 0. This is a unique data point pattern which lead to a negative correlation.
 
@@ -439,7 +475,9 @@ In this scatterplot of Estimated Return vs. Monthly Loan Payment instead of desc
 ```{r}
 ggplot(analysis_df, aes(x = LoanStatus, y = MonthlyLoanPayment)) +
     geom_boxplot() +
-    theme(axis.text.x = element_text(angle = 90, hjust = 1))
+    theme(axis.text.x = element_text(angle = 90, hjust = 1)) +
+    ggtitle("Montly Loan Payment Distributions Per Loan Status") +
+    labs(x ="Loan Status", y = "Monthly Loan Payment USD")
 ```
 
 For the boxplot summaries, it showed that meaningful information can be found by grouping data together and that NA data needed to be removed in order to reduce the amount of errors present in the final visualizations.
@@ -447,4 +485,4 @@ For the boxplot summaries, it showed that meaningful information can be found by
 
 ## Reflection
 
-The Prosper loan dataset was a large rich dataset with decent amount of variables that describe the the loans taken out on their platform. By taking a subset of interesting variables and examining them via data visualizations and summary statistics interesting patterns and observations could be made from the data. 
+The Prosper loan dataset was a large rich dataset with decent amount of variables that describe the the loans taken out on their platform. There were issues surrounding missing data and distributions with a lot of outliers. So learning how to handle bad data and use logarithmic axes were key to completing this project. Future questions could a combination of Monthly Payment and Borrower APR could predict income level, could any other combination of continuous variables predict a given factor? This could lead to classification model possiblities with this dataset.

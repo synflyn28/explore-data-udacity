@@ -1,8 +1,0 @@
-"0","analysis_df %>%"
-"0","    select(LoanStatus, EstimatedLoss) %>%"
-"0","    filter(!is.na(EstimatedLoss)) %>%"
-"0","    group_by(LoanStatus) %>%"
-"0","    summarize("
-"0","        max = max(EstimatedLoss), med = median(EstimatedLoss),"
-"0","        avg = mean(EstimatedLoss)"
-"0","    )"

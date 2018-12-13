@@ -1,0 +1,8 @@
+"0","analysis_df %>%"
+"0","    select(EmploymentStatus, EstimatedReturn) %>%"
+"0","    filter(!is.na(EstimatedReturn)) %>%"
+"0","    group_by(EmploymentStatus) %>%"
+"0","    summarize("
+"0","        max = max(EstimatedReturn), med = median(EstimatedReturn),"
+"0","        avg = mean(EstimatedReturn)"
+"0","    )"

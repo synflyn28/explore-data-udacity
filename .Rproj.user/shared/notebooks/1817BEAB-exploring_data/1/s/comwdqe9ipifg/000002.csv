@@ -1,0 +1,3 @@
+"0","ggpairs(hist_df) +"
+"0","    theme(axis.text = element_blank()) +"
+"0","    ggtitle(""Pairplot of All Continuous Variables in Dataset"")"

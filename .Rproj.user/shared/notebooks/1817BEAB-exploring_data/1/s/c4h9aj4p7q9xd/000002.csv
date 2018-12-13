@@ -1,0 +1,8 @@
+"0","analysis_df %>%"
+"0","    select(IncomeRange, AmountDelinquent) %>%"
+"0","    filter(!is.na(AmountDelinquent)) %>%"
+"0","    group_by(IncomeRange) %>%"
+"0","    summarize("
+"0","        max = max(AmountDelinquent), med = median(AmountDelinquent),"
+"0","        avg = mean(AmountDelinquent)"
+"0","    )"

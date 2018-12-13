@@ -1,0 +1,2 @@
+"0","ggpairs(hist_df) +"
+"0","    theme(axis.text = element_blank())"

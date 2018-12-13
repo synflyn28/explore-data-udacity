@@ -9,3 +9,213 @@ drwxr-xr-x  3 justinreid  staff    96B Dec  3 22:40 reports
 Initialized empty Git repository in /Users/justinreid/Data_Science_Projects/udacity_project_6/.git/
 ]0;~/Data_Science_Projects/udacity_project_6Justins-MacBook-Pro:udacity_project_6 justinreid$ git add remote o[K[K[K[K[K[K[K[K[K[K[K[Kremote add origin https://github.com/synflyn28 /explore-data-udacity.git
 ]0;~/Data_Science_Projects/udacity_project_6Justins-MacBook-Pro:udacity_project_6 justinreid$ git add .
+]0;~/Data_Science_Projects/udacity_project_6Justins-MacBook-Pro:udacity_project_6 justinreid$ git commit
+hint: Waiting for your editor to close the file... [?2004h[K[master (root-commit) 9be18c9] feat: Initial Commit
+ 190 files changed, 116230 insertions(+)
+ create mode 100644 .DS_Store
+ create mode 100644 .Rhistory
+ create mode 100644 .Rproj.user/C68BD873/console06/D867BF8F
+ create mode 100644 .Rproj.user/C68BD873/console06/D867BF8F.env
+ create mode 100644 .Rproj.user/C68BD873/console06/INDEX001
+ create mode 100644 .Rproj.user/C68BD873/pcs/files-pane.pper
+ create mode 100644 .Rproj.user/C68BD873/pcs/source-pane.pper
+ create mode 100644 .Rproj.user/C68BD873/pcs/windowlayoutstate.pper
+ create mode 100644 .Rproj.user/C68BD873/pcs/workbench-pane.pper
+ create mode 100644 .Rproj.user/C68BD873/rmd-outputs
+ create mode 100644 .Rproj.user/C68BD873/saved_source_markers
+ create mode 100644 .Rproj.user/C68BD873/sources/prop/98804AAC
+ create mode 100644 .Rproj.user/C68BD873/sources/prop/B648812E
+ create mode 100644 .Rproj.user/C68BD873/sources/prop/INDEX
+ create mode 100644 .Rproj.user/C68BD873/sources/s-A5515D05/17DEAE54
+ create mode 100644 .Rproj.user/C68BD873/sources/s-A5515D05/17DEAE54-contents
+ create mode 100644 .Rproj.user/C68BD873/sources/s-A5515D05/5079FF54-contents
+ create mode 100644 .Rproj.user/C68BD873/sources/s-A5515D05/lock_file
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/C68BD873A5515D05/chunks.json
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/c0hoks7al1mvt/000002.csv
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/c0hoks7al1mvt/000003.metadata
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/c0hoks7al1mvt/000003.rdf
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/c1mnhg7xym0au/00000c.csv
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/c1mnhg7xym0au/00000d.metadata
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/c1mnhg7xym0au/00000d.rdf
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/c20hxxxc7scqk/000002.csv
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/c20hxxxc7scqk/000003.metadata
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/c20hxxxc7scqk/000003.rdf
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/c27vw4rsqt8pv/000002.csv
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/c27vw4rsqt8pv/000003.metadata
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/c27vw4rsqt8pv/000003.rdf
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/c2ih73eegv7pb/000004.csv
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/c2ih73eegv7pb/000005.metadata
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/c2ih73eegv7pb/000005.png
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/c2ih73eegv7pb/000005.snapshot
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/c4a1q5zibyu6s/000004.csv
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/c4a1q5zibyu6s/000005.metadata
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/c4a1q5zibyu6s/000005.rdf
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/c6igrb5g6nija/000002.csv
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/c6igrb5g6nija/000003.metadata
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/c6igrb5g6nija/000003.png
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/c6igrb5g6nija/000003.snapshot
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/c7o1mlozbiy3k/000002.csv
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/c7o1mlozbiy3k/000003.metadata
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/c7o1mlozbiy3k/000003.rdf
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/c7pqcuyrqgzso/000006.csv
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/c7pqcuyrqgzso/000007.metadata
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/c7pqcuyrqgzso/000007.png
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/c7pqcuyrqgzso/000007.snapshot
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/c8a4bivrphqkk/000004.csv
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/c8a4bivrphqkk/000005.metadata
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/c8a4bivrphqkk/000005.png
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/c8a4bivrphqkk/000005.snapshot
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/c8uz8lurpf5o4/000004.csv
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/c8uz8lurpf5o4/000005.metadata
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/c8uz8lurpf5o4/000005.png
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/c8uz8lurpf5o4/000005.snapshot
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/c982yomz6zgxz/000002.csv
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/c982yomz6zgxz/000003.metadata
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/c982yomz6zgxz/000003.png
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/c982yomz6zgxz/000003.snapshot
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/ca4ly4a0l9yvp/000002.csv
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/ca4ly4a0l9yvp/000003.metadata
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/ca4ly4a0l9yvp/000003.png
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/ca4ly4a0l9yvp/000003.snapshot
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/cat2zz4tas7f5/000004.csv
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/cc6svqyc80x7a/00000c.csv
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/cc6svqyc80x7a/00000d.metadata
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/cc6svqyc80x7a/00000d.rdf
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/ccfmd9xbtmjo1/000002.csv
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/ccfmd9xbtmjo1/000003.metadata
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/ccfmd9xbtmjo1/000003.png
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/ccfmd9xbtmjo1/000003.snapshot
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/cf7rqq7yr61ue/000008.csv
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/cf7rqq7yr61ue/000009.metadata
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/cf7rqq7yr61ue/000009.rdf
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/cf9rroudg8d7b/000002.csv
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/cf9rroudg8d7b/000003.metadata
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/cf9rroudg8d7b/000003.png
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/cf9rroudg8d7b/000003.snapshot
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/cg174h94w49nf/000002.csv
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/cg174h94w49nf/000003.metadata
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/cg174h94w49nf/000003.rdf
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/cg1xm2pcwrnzw/000002.csv
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/cgfyudp5e8wm4/000002.csv
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/chg9j2apg94bk/000002.csv
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/chg9j2apg94bk/000003.metadata
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/chg9j2apg94bk/000003.png
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/chg9j2apg94bk/000003.snapshot
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/chunks.json
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/ci0prk2ul2nh2/000006.csv
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/ci0prk2ul2nh2/000007.metadata
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/ci0prk2ul2nh2/000007.rdf
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/cj6hi96sg5jp0/000010.csv
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/cj6hi96sg5jp0/000011.metadata
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/cj6hi96sg5jp0/000011.png
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/cj6hi96sg5jp0/000011.snapshot
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/cju29yji9kjdr/000002.csv
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/cju29yji9kjdr/000003.metadata
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/cju29yji9kjdr/000003.rdf
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/cjzfbi2xxn30d/000004.csv
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/cjzfbi2xxn30d/000005.metadata
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/cjzfbi2xxn30d/000005.png
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/cjzfbi2xxn30d/000005.snapshot
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/clz68cs8f3qif/000006.csv
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/clz68cs8f3qif/000007.metadata
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/clz68cs8f3qif/000007.png
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/clz68cs8f3qif/000007.snapshot
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/cmg0h8100hdu2/000004.csv
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/cmg0h8100hdu2/000005.metadata
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/cmg0h8100hdu2/000005.png
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/cmg0h8100hdu2/000005.snapshot
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/cn61ilhyfmduj/000004.csv
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/cn61ilhyfmduj/000005.metadata
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/cn61ilhyfmduj/000005.png
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/cn61ilhyfmduj/000005.snapshot
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/cnbqtbuu9c2mj/000002.csv
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/cnkhzmy73u9s1/000002.csv
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/cp2icohp3upsq/000002.csv
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/cp2icohp3upsq/000003.metadata
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/cp2icohp3upsq/000003.png
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/cp2icohp3upsq/000003.snapshot
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/cpyeg55h8rfj6/000004.csv
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/cpyeg55h8rfj6/000005.metadata
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/cpyeg55h8rfj6/000005.rdf
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/crqs3s2nl9u5p/000006.csv
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/crqs3s2nl9u5p/000007.metadata
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/crqs3s2nl9u5p/000007.rdf
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/cs0uct8w28xim/000016.csv
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/cs0uct8w28xim/000017.metadata
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/cs0uct8w28xim/000017.rdf
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/csetup_chunk/000002.csv
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/csjccucg51j4a/000023.csv
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/csjccucg51j4a/000024.metadata
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/csjccucg51j4a/000024.png
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/csjccucg51j4a/000024.snapshot
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/ctl3gmq30penx/000002.csv
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/ctl3gmq30penx/000003.metadata
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/ctl3gmq30penx/000003.rdf
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/ctt21be11oi04/000002.csv
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/ctt21be11oi04/000003.metadata
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/ctt21be11oi04/000003.rdf
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/cup8n3br1hdz0/000004.csv
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/cup8n3br1hdz0/000005.metadata
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/cup8n3br1hdz0/000005.png
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/cup8n3br1hdz0/000005.snapshot
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/cup9jj5hn2ahq/000002.csv
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/cup9jj5hn2ahq/000003.metadata
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/cup9jj5hn2ahq/000003.rdf
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/cwgn6srmneo4m/000002.csv
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/cwgn6srmneo4m/000003.metadata
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/cwgn6srmneo4m/000003.png
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/cwgn6srmneo4m/000003.snapshot
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/cx3y3463hk8s4/000002.csv
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/cx3y3463hk8s4/000003.metadata
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/cx3y3463hk8s4/000003.png
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/cx3y3463hk8s4/000003.snapshot
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/cx6dv09ggfl38/000002.csv
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/cx6dv09ggfl38/000003.metadata
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/cx6dv09ggfl38/000003.png
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/cx6dv09ggfl38/000003.snapshot
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/cyhkva1xaojyi/000002.csv
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/cyqd5amt42g0x/000002.csv
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/cyqd5amt42g0x/000003.metadata
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/cyqd5amt42g0x/000003.png
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/cyqd5amt42g0x/000003.snapshot
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/cywjg1ejjcid5/000004.csv
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/cywjg1ejjcid5/000005.metadata
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/cywjg1ejjcid5/000005.rdf
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/cywmqv8cwbxo4/000002.csv
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/cywmqv8cwbxo4/000003.metadata
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/cywmqv8cwbxo4/000003.png
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/cywmqv8cwbxo4/000003.snapshot
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/cz338q5mm90an/000004.csv
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/cz338q5mm90an/000005.metadata
+ create mode 100644 .Rproj.user/shared/notebooks/1817BEAB-exploring_data/1/s/cz338q5mm90an/000005.rdf
+ create mode 100644 .Rproj.user/shared/notebooks/AD586675-exploring_data/1/s/chpcs4y314pfp/000002.csv
+ create mode 100644 .Rproj.user/shared/notebooks/AD586675-exploring_data/1/s/chunks.json
+ create mode 100644 .Rproj.user/shared/notebooks/AD586675-exploring_data/1/s/ci7dyriynfwri/000002.csv
+ create mode 100644 .Rproj.user/shared/notebooks/AD586675-exploring_data/1/s/cistgojyyoiwu/000002.csv
+ create mode 100644 .Rproj.user/shared/notebooks/AD586675-exploring_data/1/s/cistgojyyoiwu/000003.metadata
+ create mode 100644 .Rproj.user/shared/notebooks/AD586675-exploring_data/1/s/cistgojyyoiwu/000003.rdf
+ create mode 100644 .Rproj.user/shared/notebooks/AD586675-exploring_data/1/s/csetup_chunk/000002.csv
+ create mode 100644 .Rproj.user/shared/notebooks/patch-chunk-names
+ create mode 100644 .Rproj.user/shared/notebooks/paths
+ create mode 100644 data/.DS_Store
+ create mode 100644 data/prosperLoanData.csv
+ create mode 100644 reports/exploring_data.Rmd
+ create mode 100644 reports/exploring_data.html
+ create mode 100644 udacity_project_6.Rproj
+]0;~/Data_Science_Projects/udacity_project_6Justins-MacBook-Pro:udacity_project_6 justinreid$ git push orgin [K[K[K[Kigin a[Kmaster
+Counting objects: 210, done.
+Delta compression using up to 4 threads.
+Compressing objects:   0% (1/185)   Compressing objects:   1% (2/185)   Compressing objects:   2% (4/185)   Compressing objects:   3% (6/185)   Compressing objects:   4% (8/185)   Compressing objects:   5% (10/185)   Compressing objects:   6% (12/185)   Compressing objects:   7% (13/185)   Compressing objects:   8% (15/185)   Compressing objects:   9% (17/185)   Compressing objects:  10% (19/185)   Compressing objects:  11% (21/185)   Compressing objects:  12% (23/185)   Compressing objects:  13% (25/185)   Compressing objects:  14% (26/185)   Compressing objects:  15% (28/185)   Compressing objects:  16% (30/185)   Compressing objects:  17% (32/185)   Compressing objects:  18% (34/185)   Compressing objects:  19% (36/185)   Compressing objects:  20% (37/185)   Compressing objects:  21% (39/185)   Compressing objects:  22% (41/185)   Compressing objects:  23% (43/185)   Compressing objects:  24% (45/185)   Compressing objects:  25% (47/185)   Compressing objects:  26% (49/185)   Compressing objects:  27% (50/185)   Compressing objects:  28% (52/185)   Compressing objects:  29% (54/185)   Compressing objects:  30% (56/185)   Compressing objects:  31% (58/185)   Compressing objects:  32% (60/185)   Compressing objects:  33% (62/185)   Compressing objects:  34% (63/185)   Compressing objects:  35% (65/185)   Compressing objects:  36% (67/185)   Compressing objects:  37% (69/185)   Compressing objects:  38% (71/185)   Compressing objects:  39% (73/185)   Compressing objects:  40% (74/185)   Compressing objects:  41% (76/185)   Compressing objects:  42% (78/185)   Compressing objects:  43% (80/185)   Compressing objects:  44% (82/185)   Compressing objects:  45% (84/185)   Compressing objects:  46% (86/185)   Compressing objects:  47% (87/185)   Compressing objects:  48% (89/185)   Compressing objects:  49% (91/185)   Compressing objects:  50% (93/185)   Compressing objects:  51% (95/185)   Compressing objects:  52% (97/185)   Compressing objects:  53% (99/185)   Compressing objects:  54% (100/185)   Compressing objects:  55% (102/185)   Compressing objects:  56% (104/185)   Compressing objects:  57% (106/185)   Compressing objects:  58% (108/185)   Compressing objects:  59% (110/185)   Compressing objects:  60% (111/185)   Compressing objects:  61% (113/185)   Compressing objects:  62% (115/185)   Compressing objects:  63% (117/185)   Compressing objects:  64% (119/185)   Compressing objects:  65% (121/185)   Compressing objects:  66% (123/185)   Compressing objects:  67% (124/185)   Compressing objects:  68% (126/185)   Compressing objects:  69% (128/185)   Compressing objects:  70% (130/185)   Compressing objects:  71% (132/185)   Compressing objects:  72% (134/185)   Compressing objects:  73% (136/185)   Compressing objects:  74% (137/185)   Compressing objects:  75% (139/185)   Compressing objects:  76% (141/185)   Compressing objects:  77% (143/185)   Compressing objects:  78% (145/185)   Compressing objects:  79% (147/185)   Compressing objects:  80% (148/185)   Compressing objects:  81% (150/185)   Compressing objects:  82% (152/185)   Compressing objects:  83% (154/185)   Compressing objects:  84% (156/185)   Compressing objects:  85% (158/185)   Compressing objects:  86% (160/185)   Compressing objects:  87% (161/185)   Compressing objects:  88% (163/185)   Compressing objects:  89% (165/185)   Compressing objects:  90% (167/185)   Compressing objects:  91% (169/185)   Compressing objects:  92% (171/185)   Compressing objects:  93% (173/185)   Compressing objects:  94% (174/185)   Compressing objects:  95% (176/185)   Compressing objects:  96% (178/185)   Compressing objects:  97% (180/185)   Compressing objects:  98% (182/185)   Compressing objects:  99% (184/185)   Compressing objects: 100% (185/185)   Compressing objects: 100% (185/185), done.
+Writing objects:   0% (1/210)   Writing objects:   1% (4/210)   Writing objects:   2% (5/210)   Writing objects:   3% (7/210)   Writing objects:   4% (9/210)   Writing objects:   5% (11/210)   Writing objects:   6% (13/210)   Writing objects:   7% (15/210)   Writing objects:   8% (17/210)   Writing objects:   9% (19/210)   Writing objects:  10% (21/210)   Writing objects:  11% (24/210)   Writing objects:  12% (26/210)   Writing objects:  13% (28/210)   Writing objects:  14% (30/210)   Writing objects:  15% (32/210)   Writing objects:  16% (34/210)   Writing objects:  17% (36/210)   Writing objects:  18% (38/210)   Writing objects:  19% (40/210)   Writing objects:  20% (42/210)   Writing objects:  21% (45/210)   Writing objects:  22% (47/210)   Writing objects:  23% (49/210)   Writing objects:  24% (51/210)   Writing objects:  25% (53/210)   Writing objects:  25% (53/210), 1.07 MiB | 538.00 KiB/s   Writing objects:  25% (53/210), 2.25 MiB | 736.00 KiB/s   Writing objects:  25% (53/210), 3.63 MiB | 886.00 KiB/s   Writing objects:  25% (53/210), 5.06 MiB | 989.00 KiB/s   Writing objects:  25% (53/210), 6.38 MiB | 1.13 MiB/s   Writing objects:  25% (53/210), 7.75 MiB | 1.29 MiB/s   Writing objects:  25% (53/210), 9.25 MiB | 1.33 MiB/s   Writing objects:  25% (53/210), 10.56 MiB | 1.30 MiB/s   Writing objects:  25% (53/210), 11.31 MiB | 1.30 MiB/s   Writing objects:  25% (53/210), 12.81 MiB | 1.32 MiB/s   Writing objects:  25% (53/210), 14.13 MiB | 1.31 MiB/s   Writing objects:  25% (53/210), 15.50 MiB | 1.30 MiB/s   Writing objects:  25% (53/210), 16.94 MiB | 1.32 MiB/s   Writing objects:  25% (53/210), 18.38 MiB | 1.34 MiB/s   Writing objects:  25% (53/210), 19.81 MiB | 1.34 MiB/s   Writing objects:  25% (53/210), 21.06 MiB | 1.33 MiB/s   Writing objects:  25% (54/210), 21.81 MiB | 1.34 MiB/s   Writing objects:  26% (55/210), 21.81 MiB | 1.34 MiB/s   Writing objects:  27% (57/210), 21.81 MiB | 1.34 MiB/s   Writing objects:  28% (59/210), 21.81 MiB | 1.34 MiB/s   Writing objects:  29% (61/210), 22.44 MiB | 1.32 MiB/s   Writing objects:  30% (63/210), 22.44 MiB | 1.32 MiB/s   Writing objects:  31% (66/210), 22.44 MiB | 1.32 MiB/s   Writing objects:  32% (68/210), 22.44 MiB | 1.32 MiB/s   Writing objects:  33% (70/210), 22.44 MiB | 1.32 MiB/s   Writing objects:  34% (72/210), 22.44 MiB | 1.32 MiB/s   Writing objects:  34% (73/210), 23.69 MiB | 1.30 MiB/s   Writing objects:  35% (74/210), 23.69 MiB | 1.30 MiB/s   Writing objects:  37% (78/210), 23.69 MiB | 1.30 MiB/s   Writing objects:  38% (80/210), 23.69 MiB | 1.30 MiB/s   Writing objects:  39% (82/210), 23.69 MiB | 1.30 MiB/s   Writing objects:  40% (84/210), 23.69 MiB | 1.30 MiB/s   Writing objects:  41% (87/210), 23.69 MiB | 1.30 MiB/s   Writing objects:  42% (89/210), 23.69 MiB | 1.30 MiB/s   Writing objects:  43% (91/210), 23.69 MiB | 1.30 MiB/s   Writing objects:  44% (93/210), 23.69 MiB | 1.30 MiB/s   Writing objects:  45% (95/210), 23.69 MiB | 1.30 MiB/s   Writing objects:  46% (98/210), 23.69 MiB | 1.30 MiB/s   Writing objects:  46% (98/210), 24.38 MiB | 1.27 MiB/s   Writing objects:  47% (99/210), 24.38 MiB | 1.27 MiB/s   Writing objects:  48% (101/210), 24.38 MiB | 1.27 MiB/s   Writing objects:  49% (103/210), 24.38 MiB | 1.27 MiB/s   Writing objects:  50% (105/210), 24.38 MiB | 1.27 MiB/s   Writing objects:  51% (108/210), 24.38 MiB | 1.27 MiB/s   Writing objects:  52% (110/210), 24.38 MiB | 1.27 MiB/s   Writing objects:  53% (112/210), 24.38 MiB | 1.27 MiB/s   Writing objects:  54% (114/210), 24.38 MiB | 1.27 MiB/s   Writing objects:  55% (116/210), 24.38 MiB | 1.27 MiB/s   Writing objects:  56% (118/210), 24.38 MiB | 1.27 MiB/s   Writing objects:  57% (120/210), 24.38 MiB | 1.27 MiB/s   Writing objects:  58% (122/210), 24.38 MiB | 1.27 MiB/s   Writing objects:  59% (124/210), 25.06 MiB | 1.28 MiB/s   Writing objects:  60% (126/210), 25.06 MiB | 1.28 MiB/s   Writing objects:  60% (128/210), 25.06 MiB | 1.28 MiB/s   Writing objects:  61% (129/210), 25.06 MiB | 1.28 MiB/s   Writing objects:  62% (131/210), 25.81 MiB | 1.28 MiB/s   Writing objects:  63% (133/210), 25.81 MiB | 1.28 MiB/s   Writing objects:  64% (135/210), 25.81 MiB | 1.28 MiB/s   Writing objects:  65% (137/210), 25.81 MiB | 1.28 MiB/s   Writing objects:  66% (139/210), 25.81 MiB | 1.28 MiB/s   Writing objects:  67% (141/210), 25.81 MiB | 1.28 MiB/s   Writing objects:  68% (143/210), 25.81 MiB | 1.28 MiB/s   Writing objects:  69% (145/210), 25.81 MiB | 1.28 MiB/s   Writing objects:  70% (147/210), 25.81 MiB | 1.28 MiB/s   Writing objects:  71% (150/210), 25.81 MiB | 1.28 MiB/s   Writing objects:  72% (152/210), 26.50 MiB | 1.28 MiB/s   Writing objects:  73% (154/210), 26.50 MiB | 1.28 MiB/s   Writing objects:  74% (156/210), 26.50 MiB | 1.28 MiB/s   Writing objects:  75% (158/210), 26.50 MiB | 1.28 MiB/s   Writing objects:  76% (160/210), 27.25 MiB | 1.31 MiB/s   Writing objects:  77% (162/210), 27.25 MiB | 1.31 MiB/s   Writing objects:  78% (164/210), 27.25 MiB | 1.31 MiB/s   Writing objects:  79% (166/210), 27.25 MiB | 1.31 MiB/s   Writing objects:  80% (168/210), 27.25 MiB | 1.31 MiB/s   Writing objects:  81% (171/210), 27.25 MiB | 1.31 MiB/s   Writing objects:  82% (173/210), 27.25 MiB | 1.31 MiB/s   Writing objects:  83% (175/210), 27.25 MiB | 1.31 MiB/s   Writing objects:  83% (175/210), 27.75 MiB | 1.18 MiB/s   Writing objects:  83% (175/210), 27.75 MiB | 673.00 KiB/s   Writing objects:  83% (175/210), 28.19 MiB | 641.00 KiB/s   Writing objects:  84% (177/210), 28.19 MiB | 641.00 KiB/s   Writing objects:  84% (177/210), 28.79 MiB | 589.00 KiB/s   Writing objects:  84% (177/210), 30.41 MiB | 622.00 KiB/s   Writing objects:  84% (177/210), 31.91 MiB | 627.00 KiB/s   Writing objects:  84% (177/210), 32.66 MiB | 628.00 KiB/s   Writing objects:  84% (177/210), 33.98 MiB | 1.13 MiB/s   Writing objects:  84% (177/210), 35.41 MiB | 1.40 MiB/s   Writing objects:  84% (177/210), 36.66 MiB | 1.31 MiB/s   Writing objects:  84% (177/210), 38.04 MiB | 1.28 MiB/s   Writing objects:  84% (177/210), 39.54 MiB | 1.31 MiB/s   Writing objects:  84% (177/210), 40.91 MiB | 1.29 MiB/s   Writing objects:  84% (177/210), 42.29 MiB | 1.29 MiB/s   Writing objects:  84% (177/210), 42.97 MiB | 1.32 MiB/s   Writing objects:  84% (177/210), 44.41 MiB | 1.33 MiB/s   Writing objects:  84% (177/210), 45.79 MiB | 1.31 MiB/s   Writing objects:  84% (177/210), 47.16 MiB | 1.32 MiB/s   Writing objects:  84% (177/210), 48.66 MiB | 1.34 MiB/s   Writing objects:  84% (177/210), 50.04 MiB | 1.34 MiB/s   Writing objects:  85% (179/210), 50.79 MiB | 1.34 MiB/s   Writing objects:  86% (181/210), 50.79 MiB | 1.34 MiB/s   Writing objects:  87% (183/210), 50.79 MiB | 1.34 MiB/s   Writing objects:  87% (183/210), 51.48 MiB | 1.36 MiB/s   Writing objects:  88% (185/210), 51.48 MiB | 1.36 MiB/s   Writing objects:  89% (187/210), 51.48 MiB | 1.36 MiB/s   Writing objects:  90% (189/210), 52.16 MiB | 1.35 MiB/s   Writing objects:  91% (192/210), 52.16 MiB | 1.35 MiB/s   Writing objects:  92% (194/210), 52.16 MiB | 1.35 MiB/s   Writing objects:  93% (196/210), 52.16 MiB | 1.35 MiB/s   Writing objects:  94% (198/210), 52.16 MiB | 1.35 MiB/s   Writing objects:  95% (200/210), 52.16 MiB | 1.35 MiB/s   Writing objects:  96% (202/210), 52.16 MiB | 1.35 MiB/s   Writing objects:  97% (204/210), 52.16 MiB | 1.35 MiB/s   Writing objects:  98% (206/210), 52.16 MiB | 1.35 MiB/s   Writing objects:  98% (206/210), 52.31 MiB | 724.00 KiB/s   Writing objects:  98% (206/210), 53.31 MiB | 765.00 KiB/s   Writing objects:  98% (206/210), 54.44 MiB | 718.00 KiB/s   Writing objects:  98% (206/210), 55.06 MiB | 709.00 KiB/s   Writing objects:  98% (206/210), 56.38 MiB | 697.00 KiB/s   Writing objects:  98% (206/210), 57.50 MiB | 667.00 KiB/s   Writing objects:  98% (206/210), 58.63 MiB | 1.11 MiB/s   Writing objects:  98% (206/210), 59.88 MiB | 1.14 MiB/s   Writing objects:  98% (206/210), 60.94 MiB | 1.08 MiB/s   Writing objects:  98% (206/210), 62.19 MiB | 1.11 MiB/s   Writing objects:  98% (206/210), 63.38 MiB | 1.11 MiB/s   Writing objects:  98% (206/210), 64.50 MiB | 1.11 MiB/s   Writing objects:  98% (206/210), 65.81 MiB | 1.12 MiB/s   Writing objects:  98% (206/210), 66.25 MiB | 1.09 MiB/s   Writing objects:  98% (206/210), 67.44 MiB | 1.05 MiB/s   Writing objects:  98% (206/210), 68.50 MiB | 1.03 MiB/s   Writing objects:  98% (206/210), 70.00 MiB | 1.10 MiB/s   Writing objects:  98% (206/210), 70.68 MiB | 1.10 MiB/s   Writing objects:  98% (206/210), 72.13 MiB | 1.19 MiB/s   Writing objects:  98% (206/210), 73.56 MiB | 1.28 MiB/s   Writing objects:  99% (208/210), 73.56 MiB | 1.28 MiB/s   Writing objects:  99% (208/210), 75.05 MiB | 1.35 MiB/s   Writing objects:  99% (208/210), 76.61 MiB | 1.34 MiB/s   Writing objects: 100% (210/210), 76.61 MiB | 1.34 MiB/s   Writing objects: 100% (210/210), 76.83 MiB | 1.09 MiB/s, done.
+Total 210 (delta 19), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/19)   [Kremote: Resolving deltas:   5% (1/19)   [Kremote: Resolving deltas:  26% (5/19)   [Kremote: Resolving deltas:  31% (6/19)   [Kremote: Resolving deltas:  42% (8/19)   [Kremote: Resolving deltas:  47% (9/19)   [Kremote: Resolving deltas:  68% (13/19)   [Kremote: Resolving deltas:  73% (14/19)   [Kremote: Resolving deltas:  84% (16/19)   [Kremote: Resolving deltas:  89% (17/19)   [Kremote: Resolving deltas:  94% (18/19)   [Kremote: Resolving deltas: 100% (19/19)   [Kremote: Resolving deltas: 100% (19/19), done.[K
+remote: warning: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.[K
+remote: warning: See http://git.io/iEPt8g for more information.[K
+remote: warning: File data/prosperLoanData.csv is 82.47 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB[K
+remote: 
+remote: Create a pull request for 'master' on GitHub by visiting:[K
+remote:      https://github.com/synflyn28/explore-data-udacity/pull/new/master[K
+remote: 
+To https://github.com/synflyn28/explore-data-udacity.git
+ * [new branch]      master -> master
+]0;~/Data_Science_Projects/udacity_project_6Justins-MacBook-Pro:udacity_project_6 justinreid$ [KJustins-MacBook-Pro:udacity_project_6 justinreid$ [KJustins-MacBook-Pro:udacity_project_6 justinreid$ [KJustins-MacBook-Pro:udacity_project_6 justinreid$ [KJustins-MacBook-Pro:udacity_project_6 justinreid$ [KJustins-MacBook-Pro:udacity_project_6 justinreid$ [KJustins-MacBook-Pro:udacity_project_6 justinreid$ [KJustins-MacBook-Pro:udacity_project_6 justinreid$ git add .

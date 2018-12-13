@@ -1,7 +1,0 @@
-"0","analysis_df %>%"
-"0","    select(EmploymentStatus, MonthlyLoanPayment) %>%"
-"0","    group_by(EmploymentStatus) %>%"
-"0","    summarize("
-"0","        max = max(MonthlyLoanPayment), med = median(MonthlyLoanPayment),"
-"0","        avg = mean(MonthlyLoanPayment)"
-"0","    )"

@@ -1,0 +1,4 @@
+"0","ggplot(analysis_df, aes(x = MonthlyLoanPayment, y = EstimatedReturn)) +"
+"0","    geom_point(alpha=0.08) +"
+"0","    ggtitle(""Scatter Plot of Estimated Return vs. Monthly Loan Payment"") +"
+"0","    labs(x =""Estimated Return"", y = ""Monthly Loan Payment USD"")"

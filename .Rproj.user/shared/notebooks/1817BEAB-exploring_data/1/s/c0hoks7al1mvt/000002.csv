@@ -1,8 +1,0 @@
-"0","analysis_df %>%"
-"0","    select(IncomeRange, DebtToIncomeRatio) %>%"
-"0","    filter(!is.na(DebtToIncomeRatio)) %>%"
-"0","    group_by(IncomeRange) %>%"
-"0","    summarize("
-"0","        max = max(DebtToIncomeRatio), med = median(DebtToIncomeRatio),"
-"0","        avg = mean(DebtToIncomeRatio)"
-"0","    )"

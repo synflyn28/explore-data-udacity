@@ -1,2 +1,0 @@
-"0","ggplot(analysis_df, aes(x = BorrowerAPR, y = AmountDelinquent)) +"
-"0","    geom_point()"

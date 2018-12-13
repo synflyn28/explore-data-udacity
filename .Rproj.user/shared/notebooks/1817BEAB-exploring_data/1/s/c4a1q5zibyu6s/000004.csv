@@ -1,8 +1,0 @@
-"0","analysis_df %>%"
-"0","    select(EmploymentStatus, LoanCurrentDaysDelinquent) %>%"
-"0","    filter(!is.na(LoanCurrentDaysDelinquent)) %>%"
-"0","    group_by(EmploymentStatus) %>%"
-"0","    summarize("
-"0","        max = max(LoanCurrentDaysDelinquent), med = median(LoanCurrentDaysDelinquent),"
-"0","        avg = mean(LoanCurrentDaysDelinquent)"
-"0","    )"
